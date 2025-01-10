@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Yes or No</title>
+</head>
+<body>
+    <h1 class="title">Yes or No</h1>
+
+    <form onsubmit="onQuestion(event)">
+    <div class="container">
+        <h2>Ask Anything</h2>
+        <input type="text" id="question" placeholder="Your Question" pattern="^.{3,}\?$" required>
+        <button class="askBtn">Ask</button>
+        <div id="answer">
+        </div>
+    </div>
+    </form>
+
+    <div class="answer-container"></div>
+    <div class="dog-or-joke-container"></div>
+
+    <script src="js/ajax.service.js"></script>
+    <script src="js/yesorno.controller.js"></script>
+</body>
+</html>
